@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción de Campeón F1</title>
+    <!-- Usamos Bootstrap para estilizar la tabla y mejorar el diseño -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Predicción de Campeón - F1 2022</h1>
+        <p>A continuación, se muestra el ranking de pilotos basado en la eficiencia global y los puntos predichos:</p>
+        <!-- La variable ranking_table se inyecta desde Flask -->
+        {{ ranking_table|safe }}
+    </div>
+</body>
+</html>
