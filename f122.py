@@ -16,6 +16,16 @@ if __name__ == '__main__':
 
 # Cargar el dataset y crear la variable de "Eficiencia Global"
 df = pd.read_csv('/Users/erickvanscoit/Github/Flask/data/F1_2022_data.csv')
+import os
+
+# Obtén la ruta del directorio donde se encuentra f122.py
+base_dir = os.path.dirname(os.path.abspath(__file__))
+# Construye la ruta completa al archivo CSV en el directorio "data"
+csv_path = os.path.join(base_dir, 'data', 'data/F1_2022_data.csv')
+
+# Ahora lee el CSV usando la ruta relativa
+df = pd.read_csv(csv_path)
+
 
 # Definir la fórmula de Eficiencia Global:
 # Eficiencia = (Wins + Podiums + 0.5 * No of Fastest Laps + 0.3 * Pole Positions) - (2 * DNFs)
