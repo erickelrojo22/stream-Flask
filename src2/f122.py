@@ -6,6 +6,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 
 app = Flask(__name__)
+# Cargar el dataset y crear la variable de "Eficiencia Global"
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 # Cargar el dataset y crear la variable de "Eficiencia Global"
 df = pd.read_csv('/Users/erickvanscoit/Github/Flask/data/F1_2022_data.csv')
