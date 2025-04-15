@@ -20,3 +20,4 @@ pandas
 plotly
 joblib
 pathlib
+Werkzeug==2.2.2
