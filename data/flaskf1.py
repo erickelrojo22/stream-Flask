@@ -6,6 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
 import os
 
+csv_path = os.path.join(base_dir, 'data', 'data/F1_2022_data.csv')
+
 # Inicializar la aplicación Flask
 app = Flask(__name__)
 
