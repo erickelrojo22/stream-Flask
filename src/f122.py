@@ -11,7 +11,7 @@ st.title("Ranking de Pilotos de Fórmula 1 (F1) 2022")
 
 # Cargar el dataset
 base_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(base_dir, 'data', '/workspaces/Flask/data/F1_2022_data.csv')
+csv_path = os.path.join(base_dir, 'data', '..data/F1_2022_data.csv')
 
 try:
     df = pd.read_csv(csv_path)
